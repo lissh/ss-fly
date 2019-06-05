@@ -4,6 +4,15 @@
 一键脚本搭建shadowsocks/shadowsocksR/V2Ray + 设置开启自启动 + 升级内核&开启bbr加速。
 
 ## 教程
+**shadowsocks****客户端下载地址：**
+**Windows**客户端:**https://github.com/shadowsocks/shadowsocks-windows/releases
+**Mac**客户端**:**https://github.com/shadowsocks/ShadowsocksX-NG/releases
+**Linux**客户端**:**https://github.com/shadowsocks/shadowsocks-qt5/wiki/Installation
+**Android/**安卓客户端：**https://github.com/shadowsocks/shadowsocks-android/releases
+**iOS**客户端：**商店搜索Wingy/shadowsocks(美国地区)下载
+
+
+
 1.下载一键搭建ss脚本文件，只需要执行一次，卸载ss后也不需要重新下载
 
 git clone https://github.com/lissh/ss-fly.git
