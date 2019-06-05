@@ -3,10 +3,32 @@
 
 一键脚本搭建shadowsocks/shadowsocksR/V2Ray + 设置开启自启动 + 升级内核&开启bbr加速。
 
-## 教程如何访问
-因为这个脚本，[flyzy小站](https://www.flyzy2005.com)已经被GFW拉入黑名单了，直接DNS污染了，国内无法访问。
+## 教程
+1.下载一键搭建ss脚本文件，只需要执行一次，卸载ss后也不需要重新下载
 
-如果有翻墙方法，自然可以直接访问（目前flyzy2005.com已加入GFWList）。如果还在墙内，可以参考[flyzy小站最新访问方式与镜像网站地址](https://flyzyblog.com/way-to-flyzy2005/)访问教程，科学上网吧！
+git clone https://github.com/lissh/ss-fly.git
+
+2.运行搭建ss脚本代码
+
+ss-fly/ss-fly.sh -i [password] 1024
+
+3.开启一键加速
+
+ss-fly/ss-fly.sh -bbr
+
+4.判断BBR加速有没有开启成功。输入以下命令：
+
+sysctl net.ipv4.tcp_available_congestion_control
+
+如果返回值为：
+
+net.ipv4.tcp_available_congestion_control = bbr cubic reno
+
+后面有bbr，则说明已经开启成功了。
+
+
+
+
 
 ## 支持系统
 CentOS 6+
